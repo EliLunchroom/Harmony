@@ -1,0 +1,76 @@
+body{
+  padding: 25px;
+}
+.title {
+	color: #5C6AC4;
+  text-align: center;
+}
+
+.harmony-login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 3rem 2rem 2rem;
+}
+
+.harmony-login-card {
+  width: 100%;
+  max-width: 360px;
+  padding: 1.5rem;
+  border: 1px solid #d8d8d8;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+.harmony-login-title {
+  text-align: center;
+  color: #5C6AC4;
+  margin: 0 0 1rem 0;
+}
+
+.harmony-login-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.harmony-login-input {
+  width: 100%;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.harmony-login-button {
+  margin-top: 0.75rem;
+  background-color: #5C6AC4;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.harmony-signup-input {
+  width: 100%;
+  height: 25px;
+  border-radius: 5px;
+}
+
+
+
+/*Main Page*/
+.w3-sidebar {
+  height:100%;
+  width:200px;
+  background-color:#fff;
+  position:fixed!important;
+  z-index:1;
+  overflow:auto
+}
+

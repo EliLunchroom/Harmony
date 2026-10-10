@@ -1,0 +1,52 @@
+@model Harmony.ViewModels.Contact
+@{
+    ViewData["Title"] = "Add Contact";
+}
+<head>
+  <link rel="stylesheet" href="login.css" type="text/css/" />
+</head>
+
+
+<body>
+    @using (Html.BeginForm(actionName: "Add", controllerName: "Contact", method: FormMethod.Post, new { id = "AddForm"}))
+    {
+
+      <div class="text-center">
+          <h1 class="display-4">Add Contact</h1>
+          <p>Add a contact to your dashboard</p>
+      </div>
+
+      <div>
+          <Strong>@Html.LabelFor(x => x.FirstName, new { @class = "label", @id = "lblFirstName" })</Strong>
+      </div>
+      <div>
+          @Html.TextBoxFor(c => c.FirstName, new { id = "txtFirstName", style = "border-radius:5px; width: 400px;" })
+      </div>
+      <div>
+          <Strong>@Html.LabelFor(x => x.LastName, new { @class = "label", @id = "lblLastName" })</Strong>
+      </div>
+      <div>
+          @Html.TextBoxFor(c => c.LastName, new { id = "txtLastName", style = "border-radius:5px; width: 400px;" })
+      </div>
+      <div>
+          <Strong>@Html.LabelFor(x => x.Email, new { @class = "label", @id = "lblEmail" })</Strong>
+      </div>
+      <div>
+          @Html.TextBoxFor(c => c.Email, new { id = "txtEmail", style = "border-radius:5px; width: 400px;" })
+      </div>
+      <div>
+          <Strong>@Html.LabelFor(x => x.Phone, new { @class = "label", @id = "lblPhone" })</Strong>
+      </div>
+      <div>
+          @Html.TextBoxFor(c => c.Phone, new { id = "txtPhone", style = "border-radius:5px; width: 400px;" })
+      </div>
+
+
+
+      <div>
+          <input type="submit" value="Add" id="AddBtn" name="AddBtn" class="button" />
+          <a asp-action="Add" asp-controller="Contact" class="button">Add Contact</a>
+      </div>
+
+    }
+</body>
